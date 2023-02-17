@@ -1,0 +1,65 @@
+<main class="bigFather">
+<header class="titleHead">
+  <div class="fatherC">
+    <h1 class="title">
+        <a class="movTi" href="#">MOVIES</a>
+    </h1>
+  </div>
+</header>
+
+
+
+
+<div class="peliculas">
+    <div class="cantidad">
+      
+    <h6>Wanna wacth a movie?</h6>
+    <h6>Select category and how many do you wanna see on the page!</h6>
+  </div>
+
+    <div class="seleccion ">
+        <label for=""></label>
+        <!-- <input class="options"  #category type="text" [(ngModel)]= "categories"> -->
+        <select class="options" [(ngModel)] = "categoriesGene">
+          <option *ngFor="let option of options"><b>{{option}}</b></option>
+        </select>
+        <input class="options"#numbers type="number" [(ngModel)]= "movies" >
+        <br>
+         <button class="btn" type="button" (click)="reset()">Reset</button> 
+        <button class="btn" type="button" (click)="sendMovies()">Search</button>
+        </div>
+
+       
+</div>
+
+<div class="moviesCards">
+
+  <div *ngFor = "let data of dataMovies" class="card" style="width: 20rem;">
+    <img [src]="data.poster || 'https://i.pinimg.com/564x/ef/cd/1c/efcd1c222b42d04cc6f6f46a83c0a2d4.jpg'">
+    <div class="card-body">
+      <h5 class="title"><p>{{data.title}}</p></h5>
+      <br>
+      <p class="card-text"><b>Sinopsis: </b>{{data.plot}}</p>
+      <br>
+      <p class="card-text"><b>Categories: </b>{{data.genres}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><b>Year:</b>{{data.year}}</li>
+     </ul>
+    
+  </div>
+  
+<div>
+    
+</div>
+    
+    
+  
+  </div>
+  
+
+</main>
+
+
+
+<router-outlet></router-outlet>

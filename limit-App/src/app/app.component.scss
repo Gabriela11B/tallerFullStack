@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    list-style: none;
+    box-sizing: 0;
+}
+
+
+.bigFather{
+    margin: 35px;
+    height: fit-content;
+    border: 1px rgba(128, 128, 128, 0.716) solid;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 8px 8px 8px 8px;
+    background-color: rgba(52, 127, 213, 0.203);
+}
+
+.movTi{
+    font-family: 'Fredoka One', cursive;
+    color: black;
+
+}
+
+
+.btn{
+ background-color: rgba(95, 133, 216, 0.66);
+ margin: 15px;
+ height: 35px;
+ width: 65px;
+ box-shadow: 2px 2px ;
+}
+.btn:hover{
+    background-color: rgba(59, 78, 223, 0.556);
+    font-style: oblique;
+}
+
+
+.fatherC{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    
+}
+
+.peliculas{
+    text-align: center;
+}
+.cantidad{
+    margin: 25px;
+}
+
+.options{
+    border-radius: 2px;
+    border: 1px solid dimgrey;
+    margin: 10px;
+    background-color: rgba(240, 255, 255, 0.463);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.moviesCards{
+   flex-wrap: wrap;
+   width: fit-content;
+   display: flex;
+   justify-content: center;
+   padding: 55px;
+   margin-top: 35px;
+}
+
+
+.card{
+    margin: 15px;
+    margin-bottom: 30px;
+    border-radius: 6px !important;
+    border: solid 2px rgba(0, 0, 0, 0.346);
+    background-color: rgba(240, 255, 255, 0.463);
+    box-shadow: 6px 6px 6px 6px;
+}
+
+.card:hover{
+    transition: all 0.5seg ;
+    transform:scale(1.1)
+}
+
+.title{
+    font-family: 'Fredoka One', cursive;
+    margin: 5px;
+}
+
+.image-div{
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    margin: 10px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.card-text{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-body{
+    padding: 15px;
+
+}
+
+.list-group-item{
+ margin: 10px;
+ background-color: rgba(240, 255, 255, 0.463);
+}
